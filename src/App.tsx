@@ -33,6 +33,15 @@ import {
 import { Tab, Tabs } from "./components/layout";
 
 import "./App.css";
+import PlayerZero from "@goplayerzero/sdk-web";
+import OpenReplay from '@openreplay/tracker';
+import trackerAssist from '@openreplay/tracker-assist';
+const tracker = new OpenReplay({
+  projectKey: 'Co6G0IYWvgNhu96Xd7OM',
+});
+tracker.start();
+tracker.use(trackerAssist());
+PlayerZero.init('63e6b0195382e44d2d8033ee');
 
 const searchClient = instantMeiliSearch(
   "https://ms-db879112b9bb-1931.sfo.meilisearch.io",

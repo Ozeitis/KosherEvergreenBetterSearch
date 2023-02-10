@@ -7,7 +7,10 @@
     "start": "BABEL_ENV=parcel parcel index.html"
   },
   "dependencies": {
+    "@goplayerzero/sdk-web": "^0.0.3",
     "@meilisearch/instant-meilisearch": "0.10.1",
+    "@openreplay/tracker": "^4.1.9",
+    "@openreplay/tracker-assist": "^4.1.5",
     "algoliasearch": "4.14.3",
     "instantsearch.js": "4.50.3",
     "react": "18.1.0",
@@ -18,6 +21,8 @@
     "@parcel/core": "2.8.0",
     "@parcel/packager-raw-url": "2.8.0",
     "@parcel/transformer-webmanifest": "2.8.0",
-    "parcel": "2.8.0"
+    "buffer": "^5.7.1",
+    "parcel": "2.8.0",
+    "process": "^0.11.10"
   }
 }
